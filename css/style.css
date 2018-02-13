@@ -6,7 +6,13 @@
   src:url(../fonts/ArimaMadurai-Regular.ttf)format('truetype');
 }
 
+@font-face{font-family:'copse regular';
+    src:url(../fonts/Copse-Regular.ttf)format('truetype');
+}
 
+@font-face{font-family:'berkshire regular';
+    src:url(../fonts/BerkshireSwash-Regular.ttf)format('truetype');
+}
 
 
 html, body {
@@ -24,7 +30,7 @@ body, main, aside, footer {
 }
 
 p {
-  font-family: 'Merriweather', serif;
+  font-family: "copse regular";
 }
 
 /*HEADER*/
@@ -74,8 +80,18 @@ header nav a:hover:after, .navbar-header a:hover:after {
   transition: color 0.3s linear;
 }
 
+.about {
+    background: #9aafc4;
+}
+
+.description {
+  font-size: 15pt;
+  font-family: "berkshire regular";
+  color: #000000;
+}
+
 .upAndDown:hover {
-  color: #D38947;
+  color: #ffbf00;
 }
 
 .arrow-down a {
@@ -97,7 +113,7 @@ header nav a:hover:after, .navbar-header a:hover:after {
 
 .style6 {
   color: #FFFFFF;
-  font-family: "arima regular";
+  font-family: "copse regular";
   font-size: 20pt;
 }
 
@@ -217,22 +233,6 @@ footer small {
   margin-top: 20px;
 }
 
-/*MEDIA QUERY*/
-
-@media screen and (max-width: 990px) {
-  .thumbnail .caption {
-    padding: 20% 0;
-  }
-  
-  .profile-picture.pull-right {
-    float: none !important;
-    margin: 40px auto 0 auto;
-  }
-  
-  .description {
-    text-align: center;
-  }
-}
 
 @media screen and (max-width: 770px) {
   .navbar-default .navbar-collapse {

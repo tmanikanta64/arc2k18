@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
 <title>
@@ -24,7 +24,6 @@
 			<script src="js/bootstrap.min.js"></script>
 		<!--holder-js-->
 			<script src="js/holder.min.js"></script>
-
 
 <script type="text/javascript">
 
@@ -71,7 +70,7 @@ $(document).ready(function(){
   <div class="container-fluid navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a id="brand" href="#welcome" class="navbar-brand .sliding-u-r-l">anits</a>
+        <a id="brand" href="#map" class="navbar-brand .sliding-u-r-l"><i class="glyphicon glyphicon-map-marker"> </i>ANITS, Visakhapatnam</a>
         <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
           <span class="sr-only">Toggle Navigation</span>
           <span class="icon-bar"></span>
@@ -81,9 +80,12 @@ $(document).ready(function(){
       </div>
       <nav>
         <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="myCollapsible">
-          <li><a href="#events">EVENTS</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+	  <li><a href="#welcome"><i class="glyphicon glyphicon-home"> </i> HOME</a></li>
+          <li><a href="#about"><i class="glyphicon glyphicon-info-sign"> </i> ABOUT</a></li>
+          <li><a href="#events"><i class="glyphicon glyphicon-th-list"> </i> EVENTS</a></li>
+          <li><a href="#register"><i class="glyphicon glyphicon-floppy-saved"> </i> REGISTER</a></li>
+          <li><a href="#gallery"><i class="glyphicon glyphicon-picture"> </i> GALLERY</a></li>
+          <li><a href="#contact"><i class="glyphicon glyphicon-user"> </i> CONTACT US</a></li>
         </ul>
       </nav>
     </div>
@@ -108,6 +110,25 @@ $(document).ready(function(){
     </div>
   </div>
 </header>
+
+<aside class="about" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 description">
+        <h3>ABOUT</h3>
+	<p>We are glad to inform you about the upcoming national level technical symposium to be held at <strong>ANITS ENGINEERING COLLEGE</strong> being conducted by the Department of Electrical & Electronics Engineering on 6th and 7th March.
+	</p>
+	<p>The vibrant and energetic title <strong>‘ARC’</strong> signifies the sparkling efforts of the participants. It provides the ideal platform for all the students to analyze themselves technically and present their skills. Its tagline “Joining elites ” represents a special group of multi talented people and we felicitously invite you all to link up with the elite group and get the best out of it.</p>
+	</div>
+      <div class="col-xs-12 col-sm-12 col-md-6">
+	<div class="about-top-left">
+	  <img src="arc2k18/arc1.jpeg" class="img-responsive img-rounded" width="450" height="800"/>
+	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
 
 <!--MAIN / Portfolio-->
 
@@ -211,61 +232,25 @@ $(document).ready(function(){
   </div>
 </main>
 
-<!--ASIDE / About informations-->
-
-<aside class="about" id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6 description">
-        <h3>Something about me...</h3>
-        <p>I'm Cristiano Bianchi, a mechanical engineer and aspiring web developer. I'm currently living in Florence, Italy.</p>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6">
-        <div class="profile-picture  pull-right">
-          <img src="https://avatars2.githubusercontent.com/u/11244339?v=3&s=400" class="img-responsive img-circle" alt="profile-picture">
-        </div>
-      </div>
-    </div>
-  </div>
-</aside>
-
 <!--FOOTER / Contact informations-->
 
 <footer id="contact">
   <div class="container">
     <div class="row text-center social">
-      <h4>CONTACT</h4>
-      <ul class="list-unstyled list-inline">
-        <li>
-          <a href="mailTo:cristiano.bianchi@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
-        </li>
-        <li>
-          <a href="https://plus.google.com/100942463708634376614/about" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/crisbnk" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/cristiano.bianchi.509" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/crisbnk" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-        </li>
-        <li>
-          <a href="https://codepen.io/crisbnk" target="_blank"><i class="fa fa-codepen fa-2x"></i></a>
-        </li>
-        <li>
-          <a href="https://www.freecodecamp.com/crisbnk" target="_blank"><i class="fa fa-fire fa-2x"></i></a>
-        </li>
-      </ul> 
+      <div class="description">
+	<h2>CONTACT</h2>
+      </div>
     </div>
-    <div class="row">
-      <small class="pull-right">© 2015 CRISBNK</small>
     </div>
   </div>
+    <!--contact-->
+  <div class="container">
+  <div id="map" class="row">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121618.62862662895!2d83.19166627146117!3d17.717188940002966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3a39431389e6973f%3A0x92d9c20395498468!2sVisakhapatnam%2C+Andhra+Pradesh!3m2!1d17.6868159!2d83.2184815!4m5!1s0x3a3969b1dfffbd55%3A0xc00487aa63aedf3a!2sAnil+Neerukonda+Institute+Of+Technology+%26+Sciences%2C+Door+No.+9-42-20%2C+Near+SBI+Zonal+Office%2C+Balaji+Nagar%2C+Siripuram%2C+Visakhapatnam%2C+Andhra+Pradesh+530003!3m2!1d17.7256215!2d83.31950909999999!5e0!3m2!1sen!2sin!4v1454429611740"  style="width: 1200px; height: 400px;" allowfullscreen></iframe>
+  </div>
+  </div>
+    <!--/contact-->
+
+      <small class="pull-right">created by talasu manikanta and vinay bommana</small>
 </footer>
-
-
-
-
 </html>		
