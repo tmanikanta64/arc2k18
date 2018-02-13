@@ -67,7 +67,7 @@ header nav a:after, .navbar-header a:after {
 
 header nav a:hover:after, .navbar-header a:hover:after {
 	width: 100%;
-	background: #D38947;
+	background: #a74ba8;
 }
 
 .welcome {
@@ -125,7 +125,7 @@ main {
 
 main h2 {
   padding: 30px 0;
-  color: #D38947;
+  color: #a74ba8;
   position: relative;
   text-align: center;
 }
@@ -138,7 +138,7 @@ main h2 span {
 }
 
 main h2:before {
-  background: #D38947;
+  background: #a74ba8;
   content: "";
   display: block;
   height: 1px;
@@ -153,26 +153,27 @@ h2:before {
 
 main .container {
   padding-bottom: 40px;
-  border-bottom: 1px solid #D38947
+  border-bottom: 1px solid #a74ba8;
 }
 
 .thumbnail {
     position:relative;
     overflow:hidden;
 }
- 
+
 .caption {
     position: absolute;
     top: 0;
     right: 0;
-    background: #D38947;
+    background: #ffffff;
     width: 100%;
     height: 100%;
     padding-top: 2%;
     opacity: 0;
     text-align: center;
-    color: #fff !important;
+    color: #000 !important;
     z-index: 2;
+    font-family: "berkshire regular";
 }
 
 .thumbnail .caption {
