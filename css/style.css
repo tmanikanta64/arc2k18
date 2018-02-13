@@ -67,7 +67,7 @@ header nav a:after, .navbar-header a:after {
 
 header nav a:hover:after, .navbar-header a:hover:after {
 	width: 100%;
-	background: #a74ba8;
+	background: #095057;
 }
 
 .welcome {
@@ -125,7 +125,7 @@ main {
 
 main h2 {
   padding: 30px 0;
-  color: #a74ba8;
+  color: #095057;
   position: relative;
   text-align: center;
 }
@@ -138,7 +138,7 @@ main h2 span {
 }
 
 main h2:before {
-  background: #a74ba8;
+  background: #095057;
   content: "";
   display: block;
   height: 1px;
@@ -153,7 +153,40 @@ h2:before {
 
 main .container {
   padding-bottom: 40px;
-  border-bottom: 1px solid #a74ba8;
+  border-bottom: 1px solid #095057;
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
 }
 
 .thumbnail {
