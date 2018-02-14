@@ -27,6 +27,7 @@
 		<!--holder-js-->
 			<script src="js/holder.min.js"></script>
 		    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <script type="text/javascript">
 
 $(document).ready(function(){
@@ -63,6 +64,19 @@ $(document).ready(function(){
   });
   
 });
+
+$(document).ready(function() {
+
+    $('.photo').click(function(){
+	$('.modal-body_gallery').empty();
+	    var title = $(this).parent('a').attr("title_gallery");
+	    $('.modal-title_gallery').html(title);
+	    $($(this).parents('div').html()).appendTo('.modal-body_gallery');
+	    $('#photos_modal').modal({show:true});
+    });
+
+});
+
 </script>
 
 
@@ -108,7 +122,7 @@ $(document).ready(function(){
    <p align="center" class="style6">Dept. of</p>
    <h1 align="center" class="style6">ELECTRICAL AND ELECTRONICS ENGINEERING</h1>
     <div class="arrow-down text-center">
-      <a href="#portfolio"><i class="fa fa-angle-down fa-2x"></i></a>
+      <a href="#events"><i class="fa fa-angle-down fa-2x"></i></a>
     </div>
   </div>
 </header>
@@ -163,6 +177,10 @@ $(document).ready(function(){
 	    <p>Code N Code focuses on simple tasks like encoding and decoding a particular detail</p>
 	    <p>It focuses on blending both your computer knowledge as well as Electrical skills</p>
 
+	    <p> It consists of two rounds: </p>
+	    <p> First round is an elimination round </p>
+	    <p> followed by programming round as second one. </p>
+
 	    <p>
 		Softwares Provided:
 		<ul>
@@ -174,8 +192,9 @@ $(document).ready(function(){
 	    <p>
 		Co-Ordinators list:
 		<ul>
-		<li>vinay bommana</li>
-		<li>talasu manikanta</li>
+		<li>Vinay bommana</li>
+		<li>Talasu manikanta</li>
+		<li>Rajya Laxmi</li>
 		</ul>
 	    </p>
 	</div>
@@ -486,17 +505,6 @@ $(document).ready(function(){
 </div>
 </main>
 
-<script>
-    $(document).ready(function() {
-    $('.photo').click(function(){
-	$('.modal-body').empty();
-	    var title = $(this).parent('a').attr("title");
-	    $('.modal-title').html(title);
-	    $($(this).parents('div').html()).appendTo('.modal-body');
-	    $('#photos_modal').modal({show:true});
-    });
-    });
-</script>
 
 <main role="main" id="gallery_go">
 <div class="container">
@@ -505,190 +513,194 @@ $(document).ready(function(){
       <h2><span>GALLERY</span></h2>
     </div>
   </div>
+
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image1" href="#">
       <div class="photo">
+	<a title_gallery="image1" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g1.jpg">
       </div>
     </a>
   </div>
+
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image2" href="#">
       <div class="photo">
+	<a title_gallery="image2" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g2.jpg">
       </div>
     </a>
   </div>
+
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image3" href="#">
       <div class="photo">
+	<a title_gallery="image3" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g3.jpg">
       </div>
     </a>
   </div>
+
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image4" href="#">
       <div class="photo">
+	<a title_gallery="image4" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g4.jpg">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image5" href="#">
       <div class="photo">
+	<a title_gallery="image5" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g5.jpg">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image6" href="#">
       <div class="photo">
+	<a title_gallery="image6" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g6.jpg">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image7" href="#">
       <div class="photo">
+	<a title_gallery="image7" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g7.jpg">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image8" href="#">
       <div class="photo">
+	<a title_gallery="image8" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g8.jpg">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image9" href="#">
       <div class="photo">
+	<a title_gallery="image9" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g9.jpg">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image10" href="#">
       <div class="photo">
+	<a title_gallery="image10" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g10.jpg">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image11" href="#">
       <div class="photo">
+	<a title_gallery="image11" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g11.jpg">
       </div>
     </a>
   </div>
   
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image12" href="#">
       <div class="photo">
+	<a title_gallery="image12" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g12.jpg">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image13" href="#">
       <div class="photo">
+	<a title_gallery="image13" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g13.JPG">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image14" href="#">
       <div class="photo">
+	<a title_gallery="image14" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g14.JPG">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image15" href="#">
       <div class="photo">
+    <a title_gallery="image15" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g15.JPG">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image16" href="#">
       <div class="photo">
+	<a title_gallery="image16" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g16.JPG">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image17" href="#">
       <div class="photo">
+	<a title_gallery="image17" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g17.JPG">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image18" href="#">
       <div class="photo">
+	<a title_gallery="image18" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g18.JPG">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image19" href="#">
       <div class="photo">
+	<a title_gallery="image19" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g19.JPG">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image20" href="#">
       <div class="photo">
+	<a title_gallery="image20" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g20.JPG">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image21" href="#">
       <div class="photo">
+	<a title_gallery="image21" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g21.JPG">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image22" href="#">
       <div class="photo">
+	<a title_gallery="image22" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g22.JPG">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image23" href="#">
       <div class="photo">
+    <a title_gallery="image23" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g23.JPG">
       </div>
     </a>
   </div>
 
   <div class="col-lg-3 col-sm-4 col-xs-6">
-    <a title="image24" href="#">
       <div class="photo">
+    <a title_gallery="image24" href="#">
 	<img class="thumbnail img-responsive" src="Gallery/g24.JPG">
       </div>
     </a>
@@ -696,15 +708,15 @@ $(document).ready(function(){
 
 <div tabindex="-1" class="modal fade" id="photos_modal" role="dialog">
 <div class="modal-dialog">
-<div class="modal-content">
+<div class="modal-content_gallery">
 <div class="modal-header">
-	    <button class="close" type="button" data-dismiss="modal">×</button>
-	    <h3 class="modal-title">Heading</h3>
+<button class="close" type="button" data-dismiss="modal">×</button>
+<h3 class="modal-title_gallery">Gallery</h3>
     </div>
-    <div class="modal-body">
+    <div class="modal-body_gallery">
 
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer_gallery">
 	    <button class="btn btn-default" data-dismiss="modal">Close</button>
     </div>
 </div>
@@ -756,7 +768,6 @@ $(document).ready(function(){
     <div class="thumbnail">
     <div class="caption">
 	<h3>P. Aparna</h3>
-	<p>EEE</p>
     </div>
     <img class="thumbnail img-responsive" src="arc2k18/arc1.jpeg">
   </div>
@@ -766,7 +777,6 @@ $(document).ready(function(){
     <div class="thumbnail">
     <div class="caption">
 	<h3>K. Yogesh</h3>
-	<p>EEE</p>
     </div>
     <img class="thumbnail img-responsive" src="arc2k18/arc1.jpeg">
   </div>
@@ -776,7 +786,6 @@ $(document).ready(function(){
     <div class="thumbnail">
     <div class="caption">
 	<h3>Naga Srinivas</h3>
-	<p>EEE</p>
     </div>
     <img class="thumbnail img-responsive" src="arc2k18/arc1.jpeg">
   </div>
@@ -786,7 +795,6 @@ $(document).ready(function(){
     <div class="thumbnail">
     <div class="caption">
 	<h3>Sirisha</h3>
-	<p>EEE</p>
     </div>
     <img class="thumbnail img-responsive" src="arc2k18/arc1.jpeg">
   </div>
@@ -796,7 +804,6 @@ $(document).ready(function(){
     <div class="thumbnail">
     <div class="caption">
 	<h3>T. Divya</h3>
-	<p>EEE</p>
     </div>
     <img class="thumbnail img-responsive" src="arc2k18/arc1.jpeg">
   </div>
@@ -805,13 +812,28 @@ $(document).ready(function(){
     <div class="thumbnail">
     <div class="caption">
 	<h3>Amarnath</h3>
-	<p>EEE</p>
     </div>
     <img class="thumbnail img-responsive" src="arc2k18/arc1.jpeg">
   </div>
   </div>
     </div>
   </div>
+</div>
+<div class="container description">
+  <p>
+    Student Co-Ordinators
+  </p>
+  <p>
+    K. Yogesh (8309879141)
+  </p>
+  <p>
+    P. Amarnath (7330837030)
+  </p>
+
+  <p>
+    Naga Srinivas (9290205142)
+  </p>
+    
 </div>
 <div class="container">
   <a href="https://www.facebook.com/ARC-2K18-148252925883520/" class="fa fa-facebook"></a><p>Facebook</p>
@@ -837,8 +859,14 @@ $(document).ready(function(){
   </div>
     <!--/contact-->
 
+  <div class="pull-right">From EEE department, ANITS </div>
+  <br>
+  <p>
+  </p>
       <small class="pull-right">created by talasu manikanta and vinay bommana</small>
-      <div class="about-bottom-left">
+      <p>
+      </p>
+      <div class="pull-right">
 <a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=anits.edu.in/arc18&digit=style/plain/3/&reloads=0" alt="www.reliablecounter.com" title="www.reliablecounter.com" border="0"></a><br /><a href="http://www.reliablecounter.com/fr/" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">reliablecounter.com</a>
       </div>
 </footer>
